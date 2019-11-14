@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<script type="text/javascript">
+		function time()
+				{
+				today=new Date();
+				h=today.getHours();
+				m=today.getMinutes();
+				s=today.getSeconds();
+				if (h > 12) {
+					h=h-12;
+				};
+				
+				h=h*2-1;
+				if (m > 30){
+					h=h+1;					
+				}
+
+				if (m > 30) {
+					m=m-30;
+				};
+
+				m=m*2-1;
+				if (s > 30){
+					m=m+1;					
+				}
+
+				if (h >= 0 && h < 5){
+				x = "Está de madrugada"}
+				        else if (h >= 5 && h < 12)
+				{x = "Está de manhã"}
+				        else if (h >= 12 && h < 18)
+				{x = "Está de tarde" }
+				else
+				{x = "Já estamos de noite!" }
+
+				document.getElementById('txt').innerHTML="Agora são "+h+":"+m+"."+"<br>"+x;
+				setTimeout('time()',500);
+
+
+		
+				}
+
+
+		</script>
+
+<script>
+	
+			
+
+</script>
+
+
+
+		
+	</head>
+	<body onload="time()">
+		<div id="txt">
+		</div>
+	</body>
+</html>

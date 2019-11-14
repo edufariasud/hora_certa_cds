@@ -1,0 +1,102 @@
+/* Custom Stylesheet */
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a, nav .brand-logo {
+    color: #000;
+}
+nav {
+    opacity: 0.4;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
+}
+nav:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */
+}
+p {
+    line-height: 2rem;
+}
+.sidenav-trigger {
+    color: #26a69a;
+}
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+footer.page-footer {
+    margin: 0;
+}
+.blink_text {
+    animation: 1.5s blinker linear infinite;
+    -webkit-animation: 1.5s blinker linear infinite;
+    -moz-animation: 1.5s blinker linear infinite;
+    color: red;
+}
+@-moz-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+@-webkit-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
